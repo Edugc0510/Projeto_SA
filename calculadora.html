@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="menu">
+        <div id="logo"><img src="logo.png" alt="Logo" width="79px" height="79px"></div>
+        <ul>
+            <h1>Calculadora</h1>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+            <li><a href="producao.html">Produção</a></li>
+            <li><a href="referencias.html">Referência</a></li>
+        </ul>
+    </div>
+
+
+    <nav class="calculadora1">
+        <h1>1ª Lei Termodinâmica</h1>
+        <div>
+            <label>Calor</label>
+            <input type="number"
+                id="q"
+                placeholder="p. ex. 2, 3, 4...">
+        </div>
+        <div>
+            <label>Trabalho</label>
+            <input type="number"
+                id="w"
+                placeholder="p. ex. 2, 3, 4...">
+        </div>
+        <div>
+            <label>Energia</label>
+            <input type="number"
+                id="u"
+                placeholder="p. ex. 2, 3, 4...">
+        </div>
+        <div>
+            <button type="button" onclick="botao1()">
+                1ª Cálculo
+            </button>
+
+            <button type="button"onclick="botao2()">
+                2ª Cálculo
+            </button>
+
+            <button type="button" onclick="botao3()">
+                3ª Cálculo
+            </button>
+        </div>
+    </nav>
+        <script>
+
+    const botao1 = function(){
+
+            let q = parseFloat(document.getElementById('q').value)
+
+            let w = parseFloat(document.getElementById('w').value)
+
+            let resultado = q - w
+
+            alert(resultado)
+
+        }
+
+        const botao2 = function(){
+
+            let u = parseFloat(document.getElementById('u').value)
+
+            let w = parseFloat(document.getElementById('w').value)
+
+            let resultado = u + w
+
+            alert(resultado)
+        }
+
+        const botao3 = function(){
+
+            let q = parseFloat(document.getElementById('q').value)
+            
+            let u = parseFloat(document.getElementById('u').value)
+
+            let resultado = q - u
+
+            alert(resultado)
+        }
+        
+    </script>
+
+    <nav class="calculadora2">
+        <h1>Rendimento</h1>
+
+        <div>
+            <label>Q1</label>
+            <input type="number"
+                id="q1"
+                placeholder="p. ex. 2, 3, 4...">
+        </div>
+        <div>
+            <label>Q2</label>
+            <input type="number"
+                id="q2"
+                placeholder="p. ex. 2, 3, 4...">
+        </div>
+
+        <div>
+            <button type="button" onclick="botao()">
+                Calcular
+            </button>
+        </div>
+
+        <script>
+            const botao = function(){
+
+    let x = parseFloat(document.getElementById('q1').value)
+
+    let y = parseFloat(document.getElementById('q2').value)
+
+    let resultado = (x + y) / x
+
+    alert(resultado)
+}
+        </script>
+
+
+
+
+    </nav>
+
+        </nav>
+    </nav>
+
+
+<footer class="footer">
+        
+    <div class="footer-col">
+        <h4>Informações</h4>
+            <p id="baixo">Trabalho realizado por Eduardo gabriel Christmann Groscko, cursando o segundo ano do ensino médio no SENAI (2021).</p>
+    </div>
+    
+    <div class="footer-col">
+        <h4 id="publi">Contato</h4>
+        <div class="social-links">
+            <ul id="links">
+            <a href="https://twitter.com/edugc0510"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/edugc0510/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/eduardo-christmann/?originalSubdomain=br"><i class="fab fa-linkedin-in"></i></a>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
